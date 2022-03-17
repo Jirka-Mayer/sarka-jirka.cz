@@ -1,10 +1,99 @@
+$primary-color = #3D5440
+$link-color = #5f7862
+$text-color = rgba(black, 90%)
+
+page-container()
+    // sets responsive width and horizontal margin
+    width: calc(100vw - 2 * 25px)
+    max-width: 620px
+
+    margin-left: auto
+    margin-right: auto
+
+heading-font()
+    font-family: 'Parisienne', cursive;
+    font-weight: 400;
+    line-height: 1.1
+    color: $primary-color
+    -webkit-text-stroke: $primary-color;
+    -webkit-text-stroke-width: 0.01em;
+
+paragraph-font()
+    font-family: 'Noto Serif', serif;
+    color: $text-color
+    line-height: 1.5
+    font-size: 18px
+
 body
+    margin: 0
+    padding 0
+    
     background: white
 
+::selection
+    background: rgba($primary-color, 30%)
+
 h1
-    font-family: 'Parisienne', cursive;
-    color: #3D5440
+    page-container()
+    heading-font()
+    font-size: 46px
+
+h2
+    margin-top: 2em
+    page-container()
+    heading-font()
+    font-size: 40px
+
+h3
+    margin-top: 2.5em
+    page-container()
+    paragraph-font()
+    font-weight: 700
 
 p
-    font-family: 'Noto Serif', serif;
-    color: rgba(black, 90%)
+    page-container()
+    paragraph-font()
+
+a
+    color: $link-color
+    text-decoration: underline
+    text-decoration-color: $link-color
+    text-decoration-style: solid
+    text-decoration-thickness: 1px
+    text-underline-offset: 0.1em
+
+    &:hover
+        text-decoration: none
+
+ul
+    page-container()
+
+li
+    paragraph-font()
+    list-style-position: inside
+
+blockquote
+    $color = rgba($text-color, 50%)
+
+    page-container()
+    paragraph-font()
+    font-style: italic
+    color: $color
+    border-left: 3px solid $color
+    padding-left: 1em
+    box-sizing: border-box
+
+
+//////////////////
+// Hero section //
+//////////////////
+
+.hero
+    padding: 25px 0 25px 0
+    background: #eee
+
+.hero__card
+    page-container()
+    padding: 50px 10px
+    background: white
+    box-shadow: 5px 5px 10px 0px rgba(black, 10%)
