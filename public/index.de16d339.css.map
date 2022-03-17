@@ -1,0 +1,1 @@
+{"mappings":"AAAA,KACA,eACA,CACA,GAEA,aAAA,CADA,8BAEA,CACA,EAEA,oBAAA,CADA,8BAEA","sources":["src/index.styl"],"sourcesContent":["body {\n  background: #fff;\n}\nh1 {\n  font-family: 'Parisienne', cursive;\n  color: #3d5440;\n}\np {\n  font-family: 'Noto Serif', serif;\n  color: rgba(0,0,0,0.9);\n}\n"],"names":[],"version":3,"file":"index.de16d339.css.map"}
